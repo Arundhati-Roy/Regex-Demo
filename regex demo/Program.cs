@@ -12,9 +12,9 @@ namespace regex_demo
             Console.WriteLine("Welcome to regex demo");
 
             // Step 1: the input string.
-            Console.WriteLine("Pin code");
+            Console.WriteLine("Email");
             string pin = Console.ReadLine();
-            Regex regex = new Regex(@"^[1-9]{1}[0-9]{2}\s{0,1}[0-9]{3}$");
+            Regex regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
             
             // Step 2: call Match on Regex instance.
             Match match = regex.Match(pin);
@@ -22,11 +22,11 @@ namespace regex_demo
             // Step 3: test for Success.
             if (match.Success)
             {
-                Console.WriteLine("Pin code: " + match.Value);
+                Console.WriteLine("Email: " + match.Value);
             }
             else
             {
-                Console.WriteLine("Invalid Pin Code");
+                Console.WriteLine("Invalid Email");
             }
         }
     }
