@@ -1,0 +1,29 @@
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\regex demo.exe
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\regex demo.deps.json
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\regex demo.runtimeconfig.json
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\regex demo.runtimeconfig.dev.json
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\regex demo.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\regex demo.pdb
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.csprojAssemblyReference.cache
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.AssemblyInfoInputs.cache
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.AssemblyInfo.cs
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.pdb
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.genruntimeconfig.cache
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.csproj.CopyComplete
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regex demo.csproj.CoreCompileInputs.cache
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Hosting.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Extensions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Rewrite.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\Microsoft.Net.Http.Headers.dll
