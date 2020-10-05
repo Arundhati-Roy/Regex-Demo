@@ -14,7 +14,7 @@ namespace regex_demo
             // Step 1: the input string.
             Console.WriteLine("Pin code");
             string pin = Console.ReadLine();
-            Regex regex = new Regex(@"^[1-9]{1}[0-9]{5}$");
+            Regex regex = new Regex(@"^[1-9]{1}[0-9]{2}\s{0,1}[0-9]{3}$");
             
             // Step 2: call Match on Regex instance.
             Match match = regex.Match(pin);
