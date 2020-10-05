@@ -14,7 +14,7 @@ namespace regex_demo
             // Step 1: the input string.
             Console.WriteLine("Email");
             string pin = Console.ReadLine();
-            Regex regex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$");
+            Regex regex = new Regex(@"^[^@\s]+@bridgelabz+\.+co+[^@\s]+$");
             
             // Step 2: call Match on Regex instance.
             Match match = regex.Match(pin);
