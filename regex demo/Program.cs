@@ -10,11 +10,11 @@ namespace regex_demo
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to regex demo");
-            Boolean fnval = true;
-            Boolean lnval = true;
-            Boolean eval = true;
-            Boolean phval = true;
-            Boolean pval = true;
+            bool fnval = true;
+            bool lnval = true;
+            bool eval = true;
+            bool phval = true;
+            bool pval = true;
 
             // Step 1: the input string.
             while (fnval)
@@ -63,7 +63,7 @@ namespace regex_demo
             {
                 Console.WriteLine("Phone no.");
                 string phno = Console.ReadLine();
-                Regex pn = new Regex(@"^[0-9]{1,3}\s[0-9]{10}$");
+                Regex pn = new Regex(@"^\+{0,1}[0-9]{1,3}\s[0-9]{10}$");
                 Match pnmatch = pn.Match(phno);
                 if (pnmatch.Success)
                 {
