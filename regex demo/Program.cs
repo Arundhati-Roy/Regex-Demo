@@ -15,7 +15,7 @@ namespace regex_demo
             Console.WriteLine("Email");
             string pin = Console.ReadLine();
             //Regex regex = new Regex(@"^[^@\s.+_-]+@[^@\s]+\.+[^@\s]+$");
-            Regex regex = new Regex(@"^[a-z][a-zA-Z0-9.+_-][a-zA-Z0-9]+@[a-zA0-9]+\.+[^@\s]+$");
+            Regex regex = new Regex(@"^[a-z][a-zA-Z0-9.+_-]+@[a-zA0-9]+\.(\.?[a-z]{2,}){1,2}$");
             //Regex regex = new Regex(@"^([a-z][a-z0-9.+_-]*@([a-z0-9]([a-z0-9-]*[a-z0-9])?\.)+[a-z0-9]([a-z0-9-]*[a-z0-9])?)$");
             // Step 2: call Match on Regex instance.
             Match match = regex.Match(pin);
