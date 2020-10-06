@@ -12,22 +12,24 @@ namespace regex_demo
             Console.WriteLine("Welcome to regex demo");
 
             // Step 1: the input string.
-            Console.WriteLine("Email");
+            Console.WriteLine("Name");
             string pin = Console.ReadLine();
             //Regex regex = new Regex(@"^[^@\s.+_-]+@[^@\s]+\.+[^@\s]+$");
-            Regex regex = new Regex(@"^[a-z][a-zA-Z0-9.+_-][a-zA-Z0-9]+@[a-zA0-9]+\.+[^@\s]+$");
+            //Regex regex = new Regex(@"^[a-z][a-zA-Z0-9.+_-][a-zA-Z0-9]+@[a-z0-9]+\.{1,2}+[a-z]{2,}+$");
             //Regex regex = new Regex(@"^([a-z][a-z0-9.+_-]*@([a-z0-9]([a-z0-9-]*[a-z0-9])?\.)+[a-z0-9]([a-z0-9-]*[a-z0-9])?)$");
             // Step 2: call Match on Regex instance.
-            Match match = regex.Match(pin);
+
+            Regex name = new Regex(@"^[A-Z][a-zA-Z]{2,}$");
+            Match match = name.Match(pin);
 
             // Step 3: test for Success.
             if (match.Success)
             {
-                Console.WriteLine("Email: " + match.Value);
+                Console.WriteLine("Name: " + match.Value);
             }
             else
             {
-                Console.WriteLine("Invalid Email");
+                Console.WriteLine("Invalid NameS");
             }
         }
     }
