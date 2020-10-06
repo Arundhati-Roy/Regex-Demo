@@ -12,24 +12,37 @@ namespace regex_demo
             Console.WriteLine("Welcome to regex demo");
 
             // Step 1: the input string.
-            Console.WriteLine("Name");
+            Console.WriteLine("First Name");
             string pin = Console.ReadLine();
             //Regex regex = new Regex(@"^[^@\s.+_-]+@[^@\s]+\.+[^@\s]+$");
             //Regex regex = new Regex(@"^[a-z][a-zA-Z0-9.+_-][a-zA-Z0-9]+@[a-z0-9]+\.{1,2}+[a-z]{2,}+$");
             //Regex regex = new Regex(@"^([a-z][a-z0-9.+_-]*@([a-z0-9]([a-z0-9-]*[a-z0-9])?\.)+[a-z0-9]([a-z0-9-]*[a-z0-9])?)$");
             // Step 2: call Match on Regex instance.
 
-            Regex name = new Regex(@"^[A-Z][a-zA-Z]{2,}$");
-            Match match = name.Match(pin);
+            Regex fname = new Regex(@"^[A-Z]{1}[a-z]{2,}$");
+            Match fnmatch = fname.Match(pin);
+
+            Console.WriteLine("Last Name");
+            string ln = Console.ReadLine();
+            Regex lname = new Regex(@"^[A-Z]{1}[a-z]{2,}$");
+            Match lnmatch = lname.Match(ln);
 
             // Step 3: test for Success.
-            if (match.Success)
+            if (fnmatch.Success)
             {
-                Console.WriteLine("Name: " + match.Value);
+                Console.WriteLine("First Name: " + fnmatch.Value);
             }
             else
             {
-                Console.WriteLine("Invalid NameS");
+                Console.WriteLine("Invalid First Name");
+            }
+            if (lnmatch.Success)
+            {
+                Console.WriteLine("Last Name: " + lnmatch.Value);
+            }
+            else
+            {
+                Console.WriteLine("Invalid Last Name");
             }
         }
     }
