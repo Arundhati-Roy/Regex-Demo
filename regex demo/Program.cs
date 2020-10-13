@@ -1,130 +1,173 @@
-﻿using Microsoft.AspNetCore.Rewrite.Internal;
-using Microsoft.Extensions.FileSystemGlobbing;
-using System;
+﻿using System;
 using System.Text.RegularExpressions;
 
-namespace regex_demo
+namespace UserRegistrationProblem
 {
-    public class Program
+    class CustomException : ApplicationException
     {
-        static void Main(string[] args)
+        public CustomException(string message) : base(message)
         {
-            Console.WriteLine("Welcome to regex demo");
-
-            string fname = "";
-            getFirstName(fname);
-            string lname = "";
-            getLastName(lname);
-            string email = "";
-            getEmail(email);
-            string phno = "";
-            getPhoneno(phno);
-            string pass = "";
-            getPass(pass);
-
+            Console.WriteLine("Invalid Entries");
         }
-        public static bool getFirstName(string fn)
+    }
+    public class Valid
+    {
+        public Boolean FirstNameValidation(string fname)
         {
-            bool fnval = true;
-            // Step 1: the input string.
-            while (fnval)
-            {
-                Console.WriteLine("First Name");
-                fn = Console.ReadLine();
-                Regex fname = new Regex(@"^[A-Z]{1}[a-z]{2,}$");
-                Match fnmatch = fname.Match(fn);
-                if (fnmatch.Success)
-                {
-                    Console.WriteLine("First Name: " + fnmatch.Value);
-                    fnval = false;
-                }
-                else
-                    Console.WriteLine("Invalid First Name");
-            }
-            return true;
-        }
-        public static bool getLastName(string ln)
-        {
-            bool lnval = true;
-            while (lnval)
-            {
-                Console.WriteLine("Last Name");
-                ln = Console.ReadLine();
-                Regex lname = new Regex(@"^[A-Z]{1}[a-z]{2,}$");
-                Match lnmatch = lname.Match(ln);
-                if (lnmatch.Success)
-                {
-                    Console.WriteLine("Last Name: " + lnmatch.Value);
-                    lnval = false;
-                }
-                else
-                    Console.WriteLine("Invalid Last Name");
-            }
-            return true;
-        }
-        public static bool getEmail(string email)
-        {
-            //bool eval = true;
-            Console.WriteLine("Enter your emailId : ");
-            string emailid = Console.ReadLine();
-            bool eval = EmailIDValidation(email);
-            while (!eval)
-            {
-                Console.WriteLine("Enter a valid emailID : ");
-                emailid = Console.ReadLine();
-            }
-            return true;
-        }
-        public static Boolean EmailIDValidation(string email)
-        {
-            Regex regex = new Regex(@"^[a-z][a-zA-Z0-9.+_-]+@[a-zA0-9]+\.(\.?[a-z]{2,}){1,2}$");
-            Match match = regex.Match(email);
-            if (match.Success)
-            {
+            Regex re = new Regex(@"^[A-Z]{1}[a-z]{2,}$");
+            if (re.IsMatch(fname))
                 return true;
-            }
             else
                 return false;
         }
 
-        public static bool getPhoneno(string phno)
+        public Boolean LastNameValidation(string lname)
         {
-            bool phval = true;
-            while (phval)
-            {
-                Console.WriteLine("Phone no.");
-                phno = Console.ReadLine();
-                Regex pn = new Regex(@"^\+{0,1}[0-9]{1,3}\s[0-9]{10}$");
-                Match pnmatch = pn.Match(phno);
-                if (pnmatch.Success)
-                {
-                    Console.WriteLine("No.: " + pnmatch.Value);
-                    phval = false;
-                }
-                else
-                    Console.WriteLine("Invalid Phone no.");
-            }
-            return true;
-        }
-        public static bool getPass(string pass)
-        {
-            bool pval = true;
-            while (pval)
-            {
-                Console.WriteLine("Password");
-                pass = Console.ReadLine();
-                Regex passc = new Regex(@"^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$");
-                Match pmatch = passc.Match(pass);
-                if (pmatch.Success)
-                {
-                    Console.WriteLine("Password: " + pmatch.Value);
-                    pval = false;
-                }
-                else
-                    Console.WriteLine("Invalid Passcode");
-            }
-            return true;
+            Regex re = new Regex(@"^[A-Z]{1}[a-z]{2,}$");
+            if (re.IsMatch(lname))
+                return true;
+            else
+                return false;
         }
 
+        public Boolean EmailIDValidation(string email)
+        {
+            Regex re = new Regex(@"^[a-z][a-zA-Z0-9.+_-]+@[a-zA0-9]+\.(\.?[a-z]{2,}){1,2}$");
+            if (re.IsMatch(email))
+                return true;
+            else
+                return false;
+        }
+
+        public Boolean MobileNumberValidation(string num)
+        {
+            Regex re = new Regex(@"^\+{0,1}[0-9]{1,3}\s[0-9]{10}$");
+            if (re.IsMatch(num))
+                return true;
+            else
+                return false;
+        }
+
+        public Boolean PasswordValidation(string pass)
+        {
+            Regex re = new Regex(@"^.*(?=.{8,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!*@#$%^&+=]).*$");
+            if (re.IsMatch(pass))
+                return true;
+            else
+                return false;
+        }
+        public string MoodAnalyser(string message)
+        {
+            if (message.Contains("HAPPY"))
+                return "HAPPY";
+            else
+                return "SAD";
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Valid v = new Valid();
+            string fname, lname, email, num;
+            while (true)
+            {
+                Console.WriteLine("First Name : ");
+                fname = Console.ReadLine();
+                try
+                {
+                    if (!v.FirstNameValidation(fname))
+                    {
+                        throw new CustomException("Invalid first name");
+                    }
+                    break;
+                }
+                catch (CustomException ce)
+                {
+                    Console.WriteLine(ce.Message);
+                }
+
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Last Name : ");
+                lname = Console.ReadLine();
+                try
+                {
+                    if (!v.LastNameValidation(lname))
+                    {
+                        throw new CustomException("Invalid last name");
+                    }
+                    break;
+                }
+                catch (CustomException ce)
+                {
+                    Console.WriteLine(ce.Message);
+                }
+
+            }
+
+            while (true)
+            {
+                Console.WriteLine("EmailId : ");
+                email = Console.ReadLine();
+                try
+                {
+                    if (!v.EmailIDValidation(email))
+                    {
+                        throw new CustomException("Invalid emailId");
+                    }
+                    break;
+                }
+                catch (CustomException ce)
+                {
+                    Console.WriteLine(ce.Message);
+                }
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Ph no. : ");
+                num = Console.ReadLine();
+                try
+                {
+                    if (!v.MobileNumberValidation(num))
+                    {
+                        throw new CustomException("Invalid phone number");
+                    }
+                    break;
+                }
+
+                catch (CustomException ce)
+                {
+                    Console.WriteLine(ce.Message);
+                }
+            }
+
+            while (true)
+            {
+                Console.WriteLine("Password : ");
+                string pass = Console.ReadLine();
+                try
+                {
+                    if (!v.PasswordValidation(pass))
+                    {
+                        throw new CustomException("Invalid password");
+                    }
+                    break;
+                }
+                catch (CustomException ce)
+                {
+                    Console.WriteLine(ce.Message);
+                }
+            }
+
+
+            Console.WriteLine("Registration Successful.");
+            Console.WriteLine("Name :" + fname + " " + lname);
+            Console.WriteLine("Email ID : " + email);
+            Console.WriteLine("Contact Number : " + num);
+        }
     }
 }

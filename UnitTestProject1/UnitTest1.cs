@@ -1,6 +1,8 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Text.RegularExpressions;
-using regex_demo;
+//using regex_demo;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+using UserRegistrationProblem;
 
 namespace UnitTestProject1
 {
@@ -20,7 +22,8 @@ namespace UnitTestProject1
         {
             bool expected = true;
             //regex_demo.Program program = new regex_demo.Program();
-            bool actual = Program.EmailIDValidation(email);
+            Valid v = new Valid();
+            bool actual = v.EmailIDValidation(email);
             Assert.AreEqual(expected, actual);
 
         }
