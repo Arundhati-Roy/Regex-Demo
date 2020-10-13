@@ -164,10 +164,10 @@ namespace UserRegistrationProblem
             }
 
 
-            Console.WriteLine("Registration Successful.");
+            Console.WriteLine("Registration Successful!");
             Console.WriteLine("Name :" + fname + " " + lname);
             Console.WriteLine("Email ID : " + email);
-            Console.WriteLine("Contact Number : " + num);
+            Console.WriteLine("Phone Number : " + num);
         }
     }
 }
