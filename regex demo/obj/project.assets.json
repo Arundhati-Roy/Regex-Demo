@@ -636,9 +636,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\priyadarshini roy\\source\\repos\\regex demo\\regex demo\\regex demo.csproj",
-      "projectName": "regex demo",
-      "projectPath": "C:\\Users\\priyadarshini roy\\source\\repos\\regex demo\\regex demo\\regex demo.csproj",
+      "projectUniqueName": "C:\\Users\\priyadarshini roy\\source\\repos\\regex demo\\regex demo\\regexdemo.csproj",
+      "projectName": "regexdemo",
+      "projectPath": "C:\\Users\\priyadarshini roy\\source\\repos\\regex demo\\regex demo\\regexdemo.csproj",
       "packagesPath": "C:\\Users\\priyadarshini roy\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\priyadarshini roy\\source\\repos\\regex demo\\regex demo\\obj\\",
       "projectStyle": "PackageReference",
