@@ -22,8 +22,9 @@ C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcorea
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.csprojAssemblyReference.cache
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.AssemblyInfoInputs.cache
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.AssemblyInfo.cs
-C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.csproj.CoreCompileInputs.cache
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.csproj.CopyComplete
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.dll
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.pdb
 C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.genruntimeconfig.cache
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\bin\Debug\netcoreapp3.1\LanguageExt.Core.dll
+C:\Users\priyadarshini roy\source\repos\regex demo\regex demo\obj\Debug\netcoreapp3.1\regexdemo.csproj.CoreCompileInputs.cache

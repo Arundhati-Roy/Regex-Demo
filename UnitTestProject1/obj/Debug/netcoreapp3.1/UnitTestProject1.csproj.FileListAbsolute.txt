@@ -110,3 +110,4 @@ C:\Users\priyadarshini roy\source\repos\regex demo\UnitTestProject1\bin\Debug\ne
 C:\Users\priyadarshini roy\source\repos\regex demo\UnitTestProject1\obj\Debug\netcoreapp3.1\UnitTestProject1.csproj.CoreCompileInputs.cache
 C:\Users\priyadarshini roy\source\repos\regex demo\UnitTestProject1\obj\Debug\netcoreapp3.1\UnitTestProject1.dll
 C:\Users\priyadarshini roy\source\repos\regex demo\UnitTestProject1\obj\Debug\netcoreapp3.1\UnitTestProject1.pdb
+C:\Users\priyadarshini roy\source\repos\regex demo\UnitTestProject1\bin\Debug\netcoreapp3.1\LanguageExt.Core.dll

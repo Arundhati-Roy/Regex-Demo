@@ -38,6 +38,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "LanguageExt.Core": {
+              "target": "Package",
+              "version": "[3.4.15, )"
+            },
             "Microsoft.AspNetCore.Rewrite": {
               "target": "Package",
               "version": "[2.2.0, )"
